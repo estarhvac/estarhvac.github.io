@@ -167,6 +167,21 @@ header.site.scrolled{background:rgba(5,8,12,.72);backdrop-filter:saturate(160%) 
 .promise strong{display:block;font-size:1rem}
 .promise small{display:block;color:var(--muted);font-size:.86rem;line-height:1.4}
 
+/* navien certifications */
+.certs{background:radial-gradient(800px 420px at 85% 50%,rgba(111,211,245,.10),transparent 65%),var(--bg);border-bottom:1px solid var(--line)}
+.certs-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:center}
+.certs-copy h2{margin:20px 0 22px}
+.certs-copy .lead{margin:0 0 30px;max-width:540px}
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.badge-card{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:22px;padding:34px 22px 26px;border-radius:var(--radius-lg);border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.015));text-align:center;transition:transform .5s var(--ease),border-color .4s}
+.badge-card:hover{transform:translateY(-6px);border-color:rgba(111,211,245,.35)}
+.badge-card img{width:auto;height:170px;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.badge-card figcaption strong{display:block;font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.15}
+.badge-card figcaption span{display:block;margin-top:4px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.chip-navien{text-decoration:none;border-color:rgba(111,211,245,.45);color:#fff}
+.ql-badges{display:flex;justify-content:center;align-items:center;gap:18px;margin:0 0 22px}
+.ql-badges img{height:74px;width:auto;filter:drop-shadow(0 10px 18px rgba(0,0,0,.4))}
+
 /* about (ivory) */
 .about{background:var(--ivory);color:var(--ink)}
 .about .eyebrow{color:#b3141f}
@@ -370,7 +385,7 @@ dialog.lightbox::backdrop{background:rgba(3,5,7,.94);backdrop-filter:blur(8px);-
   .hero::before{background:linear-gradient(180deg,rgba(5,8,12,.55) 0%,rgba(5,8,12,.85) 45%,var(--bg) 100%)}
   .head{grid-template-columns:1fr;gap:20px;margin-bottom:44px}
   .head p{justify-self:start}
-  .about-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}
+  .about-grid,.faq-grid,.contact-grid,.certs-grid{grid-template-columns:1fr}
   .about-media{max-width:560px;margin-bottom:30px}
   .masonry{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
   .ba-grid{grid-template-columns:1fr}
@@ -391,6 +406,10 @@ dialog.lightbox::backdrop{background:rgba(3,5,7,.94);backdrop-filter:blur(8px);-
   .hero-card .actions{grid-template-columns:1fr}
   .scroll-cue{display:none}
   .svc-grid{grid-template-columns:1fr}
+  .badge-card{padding:24px 12px 20px}
+  .badge-card img{height:120px}
+  .badge-card figcaption strong{font-size:1.05rem}
+  .badge-card figcaption span{font-size:.62rem;letter-spacing:.08em}
   .promise .wrap{grid-template-columns:1fr}
   .promise div{border-left:0;border-top:1px solid var(--line);padding:22px 4px}
   .promise div:first-child{border-top:0}
