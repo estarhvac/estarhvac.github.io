@@ -178,6 +178,7 @@ header.site.scrolled{background:rgba(5,8,12,.72);backdrop-filter:saturate(160%) 
 .badge-card img{width:auto;height:170px;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
 .badge-card figcaption strong{display:block;font-family:var(--serif);font-weight:400;font-size:1.35rem;line-height:1.15}
 .badge-card figcaption span{display:block;margin-top:4px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.badge-card img.on-dark,.ql-badges img.on-dark{filter:drop-shadow(0 0 1px rgba(255,255,255,.95)) drop-shadow(0 0 1px rgba(255,255,255,.8)) drop-shadow(0 18px 30px rgba(0,0,0,.45))}
 .chip-navien{text-decoration:none;border-color:rgba(111,211,245,.45);color:#fff}
 .ql-badges{display:flex;justify-content:center;align-items:center;gap:18px;margin:0 0 22px}
 .ql-badges img{height:74px;width:auto;filter:drop-shadow(0 10px 18px rgba(0,0,0,.4))}
